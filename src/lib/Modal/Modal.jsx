@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import './modal.css'
 
-export default function Modal({ children, isOpen, titleText, closeText }) {
+export function Modal({ children, isOpen, titleText, closeText }) {
   const [isModalOpen, setIsModalOpen] = useState(isOpen)
 
   const handleClose = () => {
