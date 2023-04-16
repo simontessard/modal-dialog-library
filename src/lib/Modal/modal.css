@@ -1,6 +1,5 @@
 /* Overlay */
 .modal-overlay {
-  font-family:'Franklin Gothic';
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
@@ -17,6 +16,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    font-family:'Franklin Gothic';
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -26,12 +26,11 @@
     gap:1.5rem;
   }
   
-  .modal-content p {
+  .modal-content p, h1 {
     margin: 0;
   }
   
   .modal-title h1{
-    margin: 0;
     border-bottom: 2px solid #52c0db;
     padding: 0 0 2px;
   }
