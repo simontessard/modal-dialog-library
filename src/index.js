@@ -8,6 +8,12 @@ const text = React.createElement('p', { className: 'red' }, 'Hello, this is a te
 
 root.render(
   <React.StrictMode>
-    <Modal isOpen={true} children={text} titleText="Title" closeText="Close" />
+    <Modal
+      isOpen={true}
+      children={text}
+      titleText="Title"
+      closeText="Close"
+      style={{ content: { padding: '2rem' }, title: { fontSize: '50px' } }}
+    />
   </React.StrictMode>
 )
