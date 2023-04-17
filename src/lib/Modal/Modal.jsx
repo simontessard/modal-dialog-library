@@ -6,7 +6,7 @@ export function Modal({ children, isOpen, titleText, closeText, style }) {
   const [isModalOpen, setIsModalOpen] = useState(isOpen)
 
   const handleClose = () => {
-    setIsModalOpen(false)
+    setIsModalOpen((prev) => !prev)
   }
 
   const { content, logo, title, closeContainer, button } = style
@@ -52,7 +52,7 @@ export function Modal({ children, isOpen, titleText, closeText, style }) {
 }
 
 Modal.propTypes = {
-  children: PropTypes.object,
+  children: PropTypes.node,
   isOpen: PropTypes.bool.isRequired,
   titleText: PropTypes.string,
   closeText: PropTypes.string,
