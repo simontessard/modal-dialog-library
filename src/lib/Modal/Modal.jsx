@@ -9,21 +9,12 @@ export function Modal({ children, isOpen, titleText, closeText, style }) {
     setIsModalOpen(false)
   }
 
-  const contentStyle = {
-    ...style.content,
-  }
-  const logoStyle = {
-    ...style.logo,
-  }
-  const titleStyle = {
-    ...style.title,
-  }
-  const closeContainerStyle = {
-    ...style.closeContainer,
-  }
-  const closeButtonStyle = {
-    ...style.button,
-  }
+  const { content, logo, title, closeContainer, button } = style
+  const contentStyle = { ...content }
+  const logoStyle = { ...logo }
+  const titleStyle = { ...title }
+  const closeContainerStyle = { ...closeContainer }
+  const closeButtonStyle = { ...button }
 
   return (
     isModalOpen && (
